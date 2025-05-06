@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Website</title>
+  <style>
+    .shape {
+      width: 200px;
+      height: 200px;
+      background-color: rgb(63, 255, 242);
+      border-radius: 0px;
+    }
+
+    @media screen and (max-width: 1000px) {
+      .shape {
+        border-radius: 50px;
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+      .shape {
+        border-radius: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="shape"></div>
+</body>
