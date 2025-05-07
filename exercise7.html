@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Row to Column</title>
+  <style>
+    html, body {
+      height: 100%;
+    } body {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      padding: 10px;
+      justify-content: center; 
+      align-items: center;
+
+    }
+
+    .container {
+      display: flex;
+      gap: 10px;
+      color: rgb(28, 35, 225);
+      justify-content: center;
+      align-items: center;
+    }
+    .shape {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(28, 35, 225);
+  
+    }
+    @media screen and (min-width:1200px) {
+        .container {
+          grid-template-rows: repeat(1, 100px);  
+          gap:10px;
+        }
+      }
+      @media screen and (max-width:1200px) {
+        .container {
+          display: grid;
+          grid-template-columns: repeat(1, 100px);
+          gap: 10px;
+    
+        }
+      }
+    @media screen and (max-width:600px) {
+      .shape {
+        grid-template-columns: repeat(1, 100px);
+        display: grid;
+       background-color: yellow;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+</body>
+</html>
+
+
+
+
